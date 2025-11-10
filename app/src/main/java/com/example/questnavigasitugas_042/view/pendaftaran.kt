@@ -66,4 +66,26 @@ fun HalamanFormulir(
                 )
             )
         }
-    )
+    ) { isiRuang ->
+        Column(
+            modifier = Modifier
+                .padding(isiRuang)
+                .padding(horizontal = 16.dp)
+                .verticalScroll(rememberScrollState()),
+            verticalArrangement = Arrangement.Top,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Spacer(modifier = Modifier.height(20.dp))
+
+            OutlinedTextField(
+                value = nama,
+                singleLine = true,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(70.dp),
+                label = { Text(text = stringResource(id = R.string.nama_lengkap)) },
+                placeholder = { Text(text = stringResource(id = R.string.nama_placeholder)) },
+                onValueChange = { nama = it },
+            )
+
+}
