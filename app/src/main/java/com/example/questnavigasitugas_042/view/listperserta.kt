@@ -98,3 +98,13 @@ fun KartuPeserta(peserta: FormData) {
                     Spacer(modifier = Modifier.height(30.dp))
                     InfoPeserta(label = stringResource(R.string.sebagai), value = peserta.pemeran)
                 }
+                Column (modifier = Modifier.weight(1f)){
+                    InfoPeserta(label = stringResource(R.string.jenis_kelamin), value = peserta.gender)
+                    Spacer(modifier = Modifier.height(30.dp))
+                    InfoPeserta(label = stringResource(R.string.agama), value = peserta.agama)
+                }
+            }
+        }
+    }
+}
+
