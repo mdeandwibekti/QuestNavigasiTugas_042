@@ -103,4 +103,19 @@ fun HalamanFormulir(
                     }
                 }
             }
+            Spacer(modifier = Modifier.padding(5.dp))
+
+            OutlinedTextField(
+                value = pemeran,
+                onValueChange = { pemeran = it },
+                singleLine = true,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(70.dp),
+                label = { Text(text = stringResource(id = R.string.sebagai)) },
+                placeholder = { Text(text = stringResource(id = R.string.status_pemeran)) },
+            )
+            Spacer(modifier = Modifier.height(16.dp))
+
+
 }
