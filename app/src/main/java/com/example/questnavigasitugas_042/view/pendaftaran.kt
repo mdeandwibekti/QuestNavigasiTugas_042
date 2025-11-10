@@ -148,6 +148,31 @@ fun HalamanFormulir(
                     }
                 }
             }
+            Spacer(modifier = Modifier.height(30.dp))
 
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 24.dp),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                OutlinedButton(
+                    modifier = Modifier.weight(1f),
+                    onClick = onNavigateBack
+                ) {
+                    Text(stringResource(id = R.string.kembali))
+                }
+                Spacer(modifier = Modifier.width(16.dp))
+                Button(
+                    modifier = Modifier.weight(1f),
+                    onClick = {
+                        Toast.makeText(context, toastMessage, Toast.LENGTH_LONG).show()
+                        onNavigateBack()
+                    }
+                ) {
+                    Text(stringResource(id = R.string.submit))
+                }
+            }
+        }
     }
 }
