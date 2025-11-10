@@ -41,5 +41,11 @@ fun HalamanWelcome(
             contentScale = ContentScale.Crop
         )
 
-
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(10.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center
+        )
 }
