@@ -50,6 +50,13 @@ fun AppNavHost(
             )
         }
 
-
+        composable(route = PengelolaHalaman.Formulir.name) {
+            HalamanFormulir(
+                viewModel = viewModel,
+                onNavigateBack = {
+                    navController.popBackStack()
+                }
+            )
+        }
     }
 }
