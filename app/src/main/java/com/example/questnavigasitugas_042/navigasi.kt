@@ -37,3 +37,19 @@ fun AppNavHost(
             )
         }
 
+        composable(route = PengelolaHalaman.ListPeserta.name) {
+            HalamanListPeserta(
+                listpeserta = viewModel.pesertaList,
+                onKeFormulirClicked = {
+                    navController.navigate(PengelolaHalaman.Formulir.name)
+                },
+                onBerandaClicked = {
+                    // Kembali ke halaman Welcome
+                    navController.popBackStack(PengelolaHalaman.Welcome.name, inclusive = false)
+                }
+            )
+        }
+
+
+    }
+}
