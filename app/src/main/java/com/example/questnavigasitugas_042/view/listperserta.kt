@@ -108,3 +108,14 @@ fun KartuPeserta(peserta: FormData) {
     }
 }
 
+@Composable
+fun InfoPeserta(label: String, value: String) {
+    Column {
+        Text(text = label.uppercase(), style = MaterialTheme.typography.labelSmall)
+        Text(
+            text = value,
+            style = MaterialTheme.typography.bodyLarge,
+            fontWeight = FontWeight.Bold
+        )
+    }
+}
