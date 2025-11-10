@@ -88,4 +88,13 @@ fun KartuPeserta(peserta: FormData) {
             .padding(top = 20.dp)
             .height(150.dp),
         elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
-    )
+    ){
+        Column (
+            modifier = Modifier.padding(16.dp)
+        ){
+            Row (horizontalArrangement = Arrangement.spacedBy(8.dp)){
+                Column (modifier = Modifier.weight(1f)){
+                    InfoPeserta(label = stringResource(R.string.nama_lengkap),value = peserta.nama)
+                    Spacer(modifier = Modifier.height(30.dp))
+                    InfoPeserta(label = stringResource(R.string.sebagai), value = peserta.pemeran)
+                }
