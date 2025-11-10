@@ -80,3 +80,12 @@ fun HalamanListPeserta(
     }
 }
 
+@Composable
+fun KartuPeserta(peserta: FormData) {
+    Card (
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(top = 20.dp)
+            .height(150.dp),
+        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
+    )
