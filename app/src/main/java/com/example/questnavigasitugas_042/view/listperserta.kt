@@ -53,4 +53,13 @@ fun HalamanListPeserta(
                 .fillMaxSize()
                 .padding(padding)
                 .padding(horizontal = 16.dp)
-        )
+        ) {
+            LazyColumn (
+                modifier = Modifier.weight(1f),
+                verticalArrangement = Arrangement.spacedBy(12.dp)
+            ){
+                items(listpeserta) { peserta ->
+                    KartuPeserta(peserta = peserta )
+                }
+            }
+
