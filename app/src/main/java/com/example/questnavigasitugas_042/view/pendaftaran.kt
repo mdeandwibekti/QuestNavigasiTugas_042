@@ -117,5 +117,37 @@ fun HalamanFormulir(
             )
             Spacer(modifier = Modifier.height(16.dp))
 
+            ExposedDropdownMenuBox(
+                expanded = isAgamaDropdownExpanded,
+                onExpandedChange = { isAgamaDropdownExpanded = !isAgamaDropdownExpanded }
+            ) {
+                OutlinedTextField(
+                    value = agama,
+                    onValueChange = {},
+                    readOnly = true,
+                    label = { Text(stringResource(R.string.agama)) },
+                    trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = isAgamaDropdownExpanded) },
+                    placeholder = { Text(stringResource(R.string.beragama)) },
+                    modifier = Modifier
+                        .menuAnchor()
+                        .fillMaxWidth()
+                        .height(70.dp),
+                )
+                ExposedDropdownMenu(
+                    expanded = isAgamaDropdownExpanded,
+                    onDismissRequest = { isAgamaDropdownExpanded = false }
+                ) {
+                    listAgama.forEach { option ->
+                        DropdownMenuItem(
+                            text = { Text(option) },
+                            onClick = {
+                                agama = option
+                                isAgamaDropdownExpanded = false
+                            }
+                        )
+                    }
+                }
+            }
 
+    }
 }
