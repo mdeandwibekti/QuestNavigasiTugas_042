@@ -47,4 +47,10 @@ fun HalamanListPeserta(
                 )
             )
         }
-    )
+    ){ padding ->
+        Column (
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(padding)
+                .padding(horizontal = 16.dp)
+        )
