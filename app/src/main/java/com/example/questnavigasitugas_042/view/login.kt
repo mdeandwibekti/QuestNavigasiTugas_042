@@ -80,5 +80,14 @@ fun HalamanWelcome(
 
             )
 
+            Spacer(modifier = Modifier.height(90.dp))
+
+            Button(
+                onClick = onMasukClicked,
+                modifier = Modifier.width(200.dp)
+            ) {
+                Text(stringResource(R.string.welcome_button))
+            }
+        }
     }
 }
