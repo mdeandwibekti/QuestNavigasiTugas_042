@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">NamaAplikasiAnda</string>
+    <string name="welcome_title">Selamat Datang</string>
+    <string name="logo_description">Logo Aplikasi</string>
+    <string name="welcome_user_details">M Dean Dwi Bekti/20230140042</string>
+    <string name="welcome_button">Masuk</string>
+    <string name="form_title">Formulir Pendaftaran</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="nama_placeholder">Isikan nama lengkap</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="sebagai">Pemeran</string>
+    <string name="status_pemeran">Pilih status pemeran</string>
+    <string name="agama">Agama</string>
+    <string name="beragama">Isikan agama</string>
+    <string name="submit">Submit</string>
+    <string name="kembali">Kembali</string>
+    <string name="list_title">List Daftar Peserta</string>
+    <string name="list_button_beranda">Beranda</string>
+    <string name="list_button_formulir">Formulir</string>
+    <string name="tampil">Tampilan Data</string>
+    <string name="back">Back</string>
+    <string name="home">Form Isian</string>
+    <string name="submit_toast">Data Pendaftaran Berhasil Dikirim!</string>
+
+</resources>
