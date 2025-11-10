@@ -87,5 +87,20 @@ fun HalamanFormulir(
                 placeholder = { Text(text = stringResource(id = R.string.nama_placeholder)) },
                 onValueChange = { nama = it },
             )
+            Spacer(modifier = Modifier.padding(top = 20.dp))
 
+            Text(text = stringResource(id = R.string.jenis_kelamin))
+
+            Spacer(modifier = Modifier.padding(top = 10.dp))
+            Row(modifier = Modifier.padding(end = 20.dp)) {
+                jenisK.forEach { item ->
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        RadioButton(
+                            selected = jenisKelamin == item,
+                            onClick = { jenisKelamin = item }
+                        )
+                        Text(text = item)
+                    }
+                }
+            }
 }
