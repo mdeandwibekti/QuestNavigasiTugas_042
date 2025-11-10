@@ -63,3 +63,20 @@ fun HalamanListPeserta(
                 }
             }
 
+            Row (
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(vertical = 16.dp),
+                horizontalArrangement = Arrangement.SpaceAround
+            ){
+                OutlinedButton(onClick = onBerandaClicked) {
+                    Text(stringResource(id = R.string.list_button_beranda))
+                }
+                Button(onClick = onKeFormulirClicked) {
+                    Text(stringResource(id = R.string.list_button_formulir))
+                }
+            }
+        }
+    }
+}
+
