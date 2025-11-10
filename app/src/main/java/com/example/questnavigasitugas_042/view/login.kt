@@ -69,6 +69,16 @@ fun HalamanWelcome(
             )
 
 
+            Text(
+                modifier = Modifier.padding(top = 200.dp),
+                text = stringResource(R.string.welcome_user_details),
+                textAlign = TextAlign.Center,
+
+                style = MaterialTheme.typography.bodyMedium,
+                color = Color.White,
+                fontSize = 27.sp
+
+            )
 
     }
 }
