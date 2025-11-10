@@ -56,3 +56,14 @@ fun HalamanFormulir(
     val context = LocalContext.current
     val toastMessage = stringResource(id = R.string.submit_toast)
 
+    Scaffold(
+        modifier = Modifier,
+        topBar = {
+            TopAppBar(
+                title = { Text(stringResource(id = R.string.form_title), color = Color.White) },
+                colors = TopAppBarDefaults.mediumTopAppBarColors(
+                    containerColor = colorResource(id = R.color.purple_700)
+                )
+            )
+        }
+    )
