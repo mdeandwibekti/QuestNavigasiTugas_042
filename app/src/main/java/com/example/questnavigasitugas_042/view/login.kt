@@ -47,5 +47,16 @@ fun HalamanWelcome(
                 .padding(10.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
-        )
+        ) {
+            Text(
+                text = stringResource(R.string.welcome_title),
+                style = MaterialTheme.typography.headlineMedium,
+                color = Color.White ,
+                fontSize = 40.sp
+
+            )
+
+            Spacer(modifier = Modifier.height(32.dp))
+
+
 }
