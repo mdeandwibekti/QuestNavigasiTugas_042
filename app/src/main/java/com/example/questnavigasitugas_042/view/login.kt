@@ -58,5 +58,17 @@ fun HalamanWelcome(
 
             Spacer(modifier = Modifier.height(32.dp))
 
+            Image(
+                painter = painterResource(id = R.drawable.anchika),
+                contentDescription = stringResource(id = R.string.logo_description),
+                modifier = Modifier
+                    .width(250.dp)
+                    .padding(vertical = 50.dp)
+                    .clip(CircleShape)
+                    .border(2.dp, Color.Gray, CircleShape)
+            )
 
+
+
+    }
 }
